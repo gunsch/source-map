@@ -1,10 +1,10 @@
 # Source Map
 
-[![Build Status](https://travis-ci.org/mozilla/source-map.png?branch=master)](https://travis-ci.org/mozilla/source-map)
+[![Build status](https://img.shields.io/github/workflow/status/cspotcode/source-map/Continuous%20Integration)](https://github.com/cspotcode/source-map/actions?query=workflow%3A%22Continuous+Integration%22)
 
-[![Coverage Status](https://coveralls.io/repos/github/mozilla/source-map/badge.svg)](https://coveralls.io/github/mozilla/source-map)
+[![Test coverage](https://codecov.io/gh/cspotcode/source-map/branch/master/graph/badge.svg)](https://codecov.io/gh/cspotcode/source-map)
 
-[![NPM](https://nodei.co/npm/source-map.png?downloads=true&downloadRank=true)](https://www.npmjs.com/package/source-map)
+[![NPM](https://nodei.co/npm/@cspotcode/source-map.png?downloads=true&downloadRank=true)](https://www.npmjs.com/package/@cspotcode/source-map)
 
 This is a library to generate and consume the source map format
 [described here][format].
@@ -13,7 +13,7 @@ This is a library to generate and consume the source map format
 
 ## Use with Node
 
-    $ npm install source-map
+    $ npm install @cspotcode/source-map
 
 ## Use on the Web
 
