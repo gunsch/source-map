@@ -51,4 +51,4 @@ jobs:
         if: ${{ always() }}
         uses: codecov/codecov-action@v1
         with:
-          flags: ${{ matrix.os }},node_${{ matrix.nodeFlag }},typescript_${{ matrix.typescriptFlag }}
+          flags: ${{ matrix.os }},node_${{ matrix.node }}
