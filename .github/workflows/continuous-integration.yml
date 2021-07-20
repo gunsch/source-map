@@ -44,6 +44,9 @@ jobs:
       # Run tests
       - run: npm run coverage
 
+      # Upload coverage
+      - run: npm run coverage-report
+        if: ${{ always() }}
       - name: Codecov
         if: ${{ always() }}
         uses: codecov/codecov-action@v1
