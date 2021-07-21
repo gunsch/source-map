@@ -50,10 +50,10 @@
   "main": "./source-map.js",
   "types": "./source-map.d.ts",
   "files": [
-    "source-map.js",
-    "source-map.d.ts",
-    "lib/",
-    "dist/source-map.js"
+    "/source-map.js",
+    "/source-map.d.ts",
+    "/lib/",
+    "/dist/source-map.js"
   ],
   "engines": {
     "node": ">= 12"
