@@ -52,8 +52,7 @@
   "files": [
     "/source-map.js",
     "/source-map.d.ts",
-    "/lib/",
-    "/dist/source-map.js"
+    "/lib/"
   ],
   "engines": {
     "node": ">= 12"
