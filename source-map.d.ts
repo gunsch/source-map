@@ -194,9 +194,9 @@ export interface SourceMapConsumerConstructor {
     GREATEST_LOWER_BOUND: number;
     LEAST_UPPER_BOUND: number;
 
-    new (rawSourceMap: RawSourceMap, sourceMapUrl?: SourceMapUrl): Promise<BasicSourceMapConsumer>;
-    new (rawSourceMap: RawIndexMap, sourceMapUrl?: SourceMapUrl): Promise<IndexedSourceMapConsumer>;
-    new (rawSourceMap: RawSourceMap | RawIndexMap | string, sourceMapUrl?: SourceMapUrl): Promise<BasicSourceMapConsumer | IndexedSourceMapConsumer>;
+    new (rawSourceMap: RawSourceMap, sourceMapUrl?: SourceMapUrl): BasicSourceMapConsumer;
+    new (rawSourceMap: RawIndexMap, sourceMapUrl?: SourceMapUrl): IndexedSourceMapConsumer;
+    new (rawSourceMap: RawSourceMap | RawIndexMap | string, sourceMapUrl?: SourceMapUrl): BasicSourceMapConsumer | IndexedSourceMapConsumer;
 
     /**
      * Create a BasicSourceMapConsumer from a SourceMapGenerator.
@@ -251,7 +251,7 @@ export interface BasicSourceMapConsumer extends SourceMapConsumer {
 export interface BasicSourceMapConsumerConstructor {
     prototype: BasicSourceMapConsumer;
 
-    new (rawSourceMap: RawSourceMap | string): Promise<BasicSourceMapConsumer>;
+    new (rawSourceMap: RawSourceMap | string): BasicSourceMapConsumer;
 
     /**
      * Create a BasicSourceMapConsumer from a SourceMapGenerator.
@@ -271,7 +271,7 @@ export interface IndexedSourceMapConsumer extends SourceMapConsumer {
 export interface IndexedSourceMapConsumerConstructor {
     prototype: IndexedSourceMapConsumer;
 
-    new (rawSourceMap: RawIndexMap | string): Promise<IndexedSourceMapConsumer>;
+    new (rawSourceMap: RawIndexMap | string): IndexedSourceMapConsumer;
 }
 
 export const IndexedSourceMapConsumer: IndexedSourceMapConsumerConstructor;
