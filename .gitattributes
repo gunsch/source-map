@@ -1,3 +1,5 @@
+* text=auto eol=lf
+
 dist/source-map.debug.js binary
 dist/source-map.js binary
 dist/source-map.min.js binary
