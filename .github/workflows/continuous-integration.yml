@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - stable
   # pull request from non-collaborators
   pull_request: {}
   # nightly
