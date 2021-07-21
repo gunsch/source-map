@@ -1441,7 +1441,7 @@ exports["test SourceMapConsumer.with and exceptions"] = async function(assert) {
   let error = null;
 
   try {
-    SourceMapConsumer.with(util.testMap, null, function(c) {
+    await SourceMapConsumer.with(util.testMap, null, function(c) {
       consumer = c;
       assert.equal(c._mappingsPtr, 0);
 
