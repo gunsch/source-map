@@ -80,6 +80,7 @@
     "prettier": "^2.7.1"
   },
   "dependencies": {
+    "buffer": "6.0.3",
     "whatwg-url": "^7.0.0"
   }
 }
