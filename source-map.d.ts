@@ -227,15 +227,15 @@ export interface SourceMapConsumerConstructor {
   new (
     rawSourceMap: RawSourceMap,
     sourceMapUrl?: SourceMapUrl
-  ): Promise<BasicSourceMapConsumer>;
+  ): BasicSourceMapConsumer;
   new (
     rawSourceMap: RawIndexMap,
     sourceMapUrl?: SourceMapUrl
-  ): Promise<IndexedSourceMapConsumer>;
+  ): IndexedSourceMapConsumer;
   new (
     rawSourceMap: RawSourceMap | RawIndexMap | string,
     sourceMapUrl?: SourceMapUrl
-  ): Promise<BasicSourceMapConsumer | IndexedSourceMapConsumer>;
+  ): BasicSourceMapConsumer | IndexedSourceMapConsumer;
 
   /**
    * Create a BasicSourceMapConsumer from a SourceMapGenerator.
@@ -246,7 +246,7 @@ export interface SourceMapConsumerConstructor {
   fromSourceMap(
     sourceMap: SourceMapGenerator,
     sourceMapUrl?: SourceMapUrl
-  ): Promise<BasicSourceMapConsumer>;
+  ): BasicSourceMapConsumer;
 
   /**
    * Construct a new `SourceMapConsumer` from `rawSourceMap` and `sourceMapUrl`
@@ -299,7 +299,7 @@ export interface BasicSourceMapConsumer extends SourceMapConsumer {
 export interface BasicSourceMapConsumerConstructor {
   prototype: BasicSourceMapConsumer;
 
-  new (rawSourceMap: RawSourceMap | string): Promise<BasicSourceMapConsumer>;
+  new (rawSourceMap: RawSourceMap | string): BasicSourceMapConsumer;
 
   /**
    * Create a BasicSourceMapConsumer from a SourceMapGenerator.
@@ -307,7 +307,7 @@ export interface BasicSourceMapConsumerConstructor {
    * @param sourceMap
    *        The source map that will be consumed.
    */
-  fromSourceMap(sourceMap: SourceMapGenerator): Promise<BasicSourceMapConsumer>;
+  fromSourceMap(sourceMap: SourceMapGenerator): BasicSourceMapConsumer;
 }
 
 export const BasicSourceMapConsumer: BasicSourceMapConsumerConstructor;
@@ -319,7 +319,7 @@ export interface IndexedSourceMapConsumer extends SourceMapConsumer {
 export interface IndexedSourceMapConsumerConstructor {
   prototype: IndexedSourceMapConsumer;
 
-  new (rawSourceMap: RawIndexMap | string): Promise<IndexedSourceMapConsumer>;
+  new (rawSourceMap: RawIndexMap | string): IndexedSourceMapConsumer;
 }
 
 export const IndexedSourceMapConsumer: IndexedSourceMapConsumerConstructor;
